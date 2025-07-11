@@ -1,0 +1,8 @@
+<section id="special-offers" style="padding:40px 20px;">
+  <h2 style="font-size:2rem;color:#3E2723;">Ofertas especiales 🔖</h2>
+  <div style="display:flex;flex-wrap:wrap;gap:15px;margin-top:20px;">
+    {% for product in collections.specials.products %}
+      {% include 'product-card' %}
+    {% endfor %}
+  </div>
+</section>
