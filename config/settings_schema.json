@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Testimonios",
+    "settings": [
+      {
+        "type": "list",
+        "id": "testimonials",
+        "label": "Lista de testimonios",
+        "settings": [
+          { "type": "text", "id": "quote", "label": "Texto del cliente" },
+          { "type": "text", "id": "author", "label": "Nombre del cliente" }
+        ]
+      }
+    ]
+  }
+]
