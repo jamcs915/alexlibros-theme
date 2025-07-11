@@ -1,0 +1,10 @@
+<section id="genres-categories" style="padding:40px 20px;">
+  <h2 style="font-size:2rem;color:#3E2723;">Géneros</h2>
+  <div style="display:flex;gap:15px;flex-wrap:wrap;margin-top:20px;">
+    {% for collection in collections %}
+      <a href="{{ collection.url }}" style="background:#d7c4a2;padding:15px;border-radius:8px;text-align:center;color:#3E2723;text-decoration:none;">
+        {{ collection.title }}
+      </a>
+    {% endfor %}
+  </div>
+</section>
