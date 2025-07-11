@@ -1,0 +1,11 @@
+<section id="customer-testimonials" style="padding:40px 20px;background:#f2ece4;">
+  <h2 style="font-size:2rem;color:#3E2723;">Testimonios de clientes 😊</h2>
+  <div style="display:flex;overflow-x:auto;gap:15px;padding-top:20px;">
+    {% for testimonial in settings.testimonials %}
+      <div style="background:#d7c4a2;padding:20px;border-radius:8px;min-width:240px;">
+        <p>"{{ testimonial.quote }}"</p>
+        <p style="font-weight:bold;margin-top:10px;">— {{ testimonial.author }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
