@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  {{ content_for_header }}
+  <link rel="stylesheet" href="{{ 'styles.scss.css' | asset_url }}">
+</head>
+<body>
+  {% section 'hero-banner' %}
+  <main>
+    {% section 'genres-categories' %}
+    {% section 'new-arrivals' %}
+    {% section 'special-offers' %}
+    {% section 'customer-testimonials' %}
+  </main>
+  {% section 'newsletter-footer' %}
+  {{ content_for_footer }}
+  <script src="{{ 'theme.js' | asset_url }}"></script>
+</body>
+</html>
